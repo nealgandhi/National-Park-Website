@@ -48,11 +48,13 @@ function Activities() {
                     </div>
                 )
             })}
+            <div className="parksList">
             {currentActivity.parks.map((park) => {
-               return( 
-                <ul className="parksList">{park.fullName}</ul>
+               return(
+                    <ul>{park.fullName}</ul>
                )
              })}
+             </div>
              <Footer />
             </div>
              </>
@@ -86,7 +88,4 @@ function Activities() {
     }
 
 }
-/*
-<Link className='parkLinks' to={`/${parks.parkCode}`}>{parks.fullName}</Link>
-*/
 export default Activities

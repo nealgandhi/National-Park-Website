@@ -1,5 +1,8 @@
 import React, { PureComponent } from "react";
 import "./Home.css";
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+
 
 export class Home extends PureComponent {
   render() {
@@ -15,9 +18,13 @@ export class Home extends PureComponent {
         }}
       >
         <h1>Hello, where would you like to go today?</h1>
-       <a href="/parkList"><input type="button" value="List of Parks" /></a>
-       <a href="/activity"><input type="button" value="Activities" /></a>
-       <a href="/webcams"><input type="button" value="Webcams" /></a>
+        <div className="homeButtons">
+            <Stack direction="row" spacing={2}>
+                <Button href="/parkList" variant="contained">List of Parks</Button>
+                <Button href="/activity" variant="contained">Activities</Button>
+                <Button href="/webcams" variant="contained">Webcams</Button>
+            </Stack>
+        </div>
       </div>
     );
   }

@@ -7,3 +7,12 @@
     backdrop-filter: 'brightness(150%)';
 
 }
+.homeButtons{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.linkButton{
+    margin: 5px;
+}
