@@ -15,7 +15,8 @@ function Body() {
       ;}
       useEffect(()=>{
         fetchData();
-      },[],)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+      },[])
     if(!loading){
         return (
             <div className="Body">
@@ -35,6 +36,10 @@ function Body() {
                                                 {val.fullName}
                                             </div> 
                                         )
+                                 } else {
+                                     return(
+                                         <div> </div>
+                                     )
                                  }
                              }).map((parks,key)=>{
                                  return(
