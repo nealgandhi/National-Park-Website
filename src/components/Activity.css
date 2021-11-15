@@ -1,0 +1,10 @@
+.buttonList{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    outline: none;
+}
+
+.parks{
+    text-decoration: none;
+    list-style-type: none;
+}

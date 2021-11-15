@@ -1,0 +1,24 @@
+.Body{
+    font-size: 1.2rem;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+}
+.parkImages{
+    width: 50%;
+    height: 50%;
+}
+.paragraphs{
+    font-size: 2rem;
+}
+.searchList{
+    text-align: center;
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-top: 1%;
+}
+.Body input{
+    margin-top: 5px;
+}
