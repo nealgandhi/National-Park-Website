@@ -1,5 +1,5 @@
 .Navbar{
-    background-color: rgba(16, 45, 214, 0.643);
+    background-color: rgb(2, 70, 2);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -47,5 +47,5 @@
     color: white;
 }
 .nav-links:hover {
-    color: rgb(236, 140, 185);
+    color:rgb(0, 153, 255);
 }

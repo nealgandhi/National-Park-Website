@@ -23,6 +23,7 @@ function Body() {
                 <div className="parkList">
                         <div>
                              <input type="text" placeholder="Search for..." onChange={(e) => setSearchTerm(e.target.value)} value={searchTerm}/>
+                             {/* eslint-disable-next-line array-callback-return */}
                              {parklist.data.filter((val)=>{
                                  if(searchTerm===""){
                                      return (
@@ -36,10 +37,6 @@ function Body() {
                                                 {val.fullName}
                                             </div> 
                                         )
-                                 } else {
-                                     return(
-                                         <div> </div>
-                                     )
                                  }
                              }).map((parks,key)=>{
                                  return(

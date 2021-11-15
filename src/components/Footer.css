@@ -2,7 +2,15 @@
     bottom: 0;
     width: 100%;
     color:white;
-    background-color: rgba(16, 45, 214, 0.644);
+    background-color: rgb(2, 70, 2);
     padding: 5px;
     text-decoration: none;
+}
+
+.footerText{
+    text-decoration: none;
+    color: white;
+}
+.footerText:hover{
+    color:rgb(0, 153, 255);
 }
