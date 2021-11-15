@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import "./Activities.css"
 import Activity from "./Activity";
+import Navbar from './Navbar/Navbar';
+import Footer from './Footer';
 
 function Activities() {
+    const API_KEY = process.env.REACT_APP_API_KEY;
     const[activitiesList, setActivities] = useState([]);
     const[isLoading, setLoading] = useState(true);
     const [currentActivity, setCurrentActivity] = useState(null);
@@ -23,7 +26,7 @@ function Activities() {
 
 
     const fetchData = () =>{
-        return fetch(`https://developer.nps.gov/api/v1/activities/parks?limit=50&api_key=0a3iYxfmXlLUVp8qLKccleThE9ZqALeTdQhrPISn`)
+        return fetch(`https://developer.nps.gov/api/v1/activities/parks?limit=50&api_key=${API_KEY}`)
             .then((response)=> response.json())
             .then((data)=> setActivities(data))
             .then(() => setLoading(false))
@@ -31,13 +34,14 @@ function Activities() {
 
       useEffect(()=>{
         fetchData();
-      },[],)
-      // add rendering here
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[],)
       if (!isLoading && showParkList){
         return (
             <>
-              <div>
-              {activitiesList.data.map((activity) =>{
+                <div>
+                <Navbar />
+                {activitiesList.data.map((activity) =>{
                 return (
                     <div className="buttons">
                         <Activity clickHandle={clickHandle} Activity={activity}/>
@@ -49,6 +53,7 @@ function Activities() {
                 <ul className="parksList">{park.fullName}</ul>
                )
              })}
+             <Footer />
             </div>
              </>
 
@@ -58,6 +63,7 @@ function Activities() {
         return(
             <>
             <div>
+            <Navbar />
             {activitiesList.data.map((activity) =>{
                 return (
                     <div className="buttons">
@@ -65,13 +71,16 @@ function Activities() {
                     </div>
                 )
             })}
+            <Footer />
             </div>
             </>
         );
     } else {
         return(
             <div> 
+                <Navbar />
                 <h1>Loading...</h1>
+                <Footer />
             </div>
         );
     }

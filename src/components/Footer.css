@@ -5,6 +5,8 @@
     background-color: rgb(2, 70, 2);
     padding: 5px;
     text-decoration: none;
+    position: fixed;
+    bottom: 0;
 }
 
 .footerText{

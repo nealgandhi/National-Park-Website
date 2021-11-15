@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import Navbar from './Navbar/Navbar';
+import Footer from './Footer';
 import './Body.css'
 
 function Body() {
@@ -19,9 +21,10 @@ function Body() {
       },[])
     if(!loading){
         return (
-            <div className="Body">
-                <div className="parkList">
-                        <div>
+            <div>
+                <Navbar />
+                <div className="Body">
+                    <div className="parkList">
                              <input type="text" placeholder="Search for..." onChange={(e) => setSearchTerm(e.target.value)} value={searchTerm}/>
                              {/* eslint-disable-next-line array-callback-return */}
                              {parklist.data.filter((val)=>{
@@ -49,10 +52,17 @@ function Body() {
                              })}
                         </div>
                 </div>
+                <Footer />
             </div>
         )
     } else {
-        return <h1>Loading...</h1>
+        return (
+            <div>
+                <Navbar />
+                <h1>Loading...</h1>
+                <Footer />
+            </div>
+        )
     }
 }
 export default Body

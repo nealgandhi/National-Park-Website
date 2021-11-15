@@ -1,22 +1,28 @@
 import React, { useState, useEffect } from 'react'
 import './Webcams.css'
+import Navbar from './Navbar/Navbar';
+import Footer from './Footer';
 function Webcams() {
+    const API_KEY = process.env.REACT_APP_API_KEY
     const[webcamList, setWebcamList] = useState([]);
     const[loading, setLoading] = useState(true);
     
     const fetchData = () =>{
-        return fetch(`https://developer.nps.gov/api/v1/webcams?api_key=0a3iYxfmXlLUVp8qLKccleThE9ZqALeTdQhrPISn`)
+        return fetch(`https://developer.nps.gov/api/v1/webcams?api_key=${API_KEY}`)
             .then((response)=> response.json())
             .then((data)=> setWebcamList(data))
             .then(() => setLoading(false))
       ;}
       useEffect(()=>{
         fetchData();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
       },[],)
     if(loading){
         return(
             <div>
+                <Navbar />
                 <h1>Loading...</h1>
+                <Footer />
             </div>
         )
     } else if(!loading && webcamList.data.length===0){
@@ -26,6 +32,7 @@ function Webcams() {
     } else{
         return (
             <div>
+                <Navbar />
                 {webcamList.data.map((pic)=>{
                     return(
                         <div>
@@ -40,6 +47,7 @@ function Webcams() {
                         </div>
                     )
                 })}
+                <Footer />
             </div>
         )
     }

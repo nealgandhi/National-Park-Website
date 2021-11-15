@@ -1,7 +1,5 @@
 import React from 'react'
 import './App.css';
-import Navbar from './components/Navbar/Navbar.js'
-import Footer from './components/Footer.js'
 import Body from './components/Body.js'
 import Activities from './components/Activities';
 import Home from './components/Home.js';
@@ -13,7 +11,6 @@ import { BrowserRouter, Routes, Route, } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-        <Navbar />
           <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />}/>
@@ -22,7 +19,6 @@ function App() {
                 <Route path="webcams" element={<Webcams />}/>
             </Routes>
           </BrowserRouter>
-        <Footer />
     </div>
 
   );
