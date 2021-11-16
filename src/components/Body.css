@@ -3,6 +3,7 @@
     padding-left: 3px;
     padding-right: 3px;
     padding-top: 3px;
+    justify-content: center;
 }
 .parkImages{
     width: 50%;
@@ -11,13 +12,35 @@
 .paragraphs{
     font-size: 2rem;
 }
+.bodyInput{
+    width: 30%;
+    height: 50%;
+    justify-content: center;
+}
 .searchList{
     text-align: center;
     font-size: 1rem;
     text-align: center;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
-    margin-top: 1%;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin-bottom: auto;
+}
+.blockList{
+    padding: .75rem;
+    height: 100%;
+}
+.block{
+    width: 100%;
+    font-size: 1rem;
+    background: hsla(0,0%,100%,.6);
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 2px solid hsla(0,0%,100%,.18);
+}
+.parkText{
+    padding: 1rem;
 }
 .Body input{
     margin-top: 5px;
