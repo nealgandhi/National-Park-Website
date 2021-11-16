@@ -53,7 +53,7 @@ function Webcams(){
                                                     <img className="webcamImages" src={items.url} alt={items.id}/>
                                                 </div>
                                             )
-                                        }) : <p>No Images found :(</p>
+                                        }) : <p></p>
                                     )}
                                 </ParkFilter.Consumer>
                             </div>
