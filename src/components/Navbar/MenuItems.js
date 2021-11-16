@@ -6,17 +6,17 @@ export const MenuItems = [
     },
     {
         title: 'Park List',
-        url: 'parkList',
+        url: '/parkList',
         cName: 'nav-links'
     },
     {
         title: 'Activities',
-        url: 'activity',
+        url: '/activity',
         cName: 'nav-links'
     },
     {
         title: 'Park Photos',
-        url: 'webcams',
+        url: '/webcams',
         cName: 'nav-links'
     }
 ]

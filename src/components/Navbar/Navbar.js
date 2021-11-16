@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import './Navbar.css'
 import { MenuItems } from './MenuItems'
 import './Navbar.css'
@@ -10,12 +11,10 @@ export class Navbar extends Component {
     handleClick = () =>{
         this.setState({clicked: !this.state.clicked})
     }
-    /* add back in before "national parks"
-    <img src="/nps.png" className="navbar-image"/>
-    */
 
     render() {
         return (
+            // Creating a Navigation Bar to handle routing through links that are coded into MenuItems.js
             <nav className="Navbar">
                 <div className="title-logo">
                     <h1 className="navbar-logo">National Parks<i className="fab fa-react"> </i></h1>
@@ -27,9 +26,9 @@ export class Navbar extends Component {
                     {MenuItems.map((item, index) => {
                         return(
                             <li key={index}>
-                                <a className={item.cName} href={item.url}>
+                                <Link className={item.cName} to={item.url}>
                                     {item.title}
-                                </a>
+                                </Link>
                             </li>
                         ); 
                     })}

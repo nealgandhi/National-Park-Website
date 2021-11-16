@@ -7,6 +7,7 @@ import Stack from '@mui/material/Stack';
 export class Home extends PureComponent {
   render() {
     return (
+        // in-line CSSing to handle splash image on the home page
         <div
         style={{
           backgroundImage: "url('/park.png')",
@@ -17,7 +18,11 @@ export class Home extends PureComponent {
           backdropFilter: 'brightness(150%)'
         }}
       >
-        <h1>Hello, where would you like to go today?</h1>
+        <h1>Welcome to National Park Search</h1>
+        <p>What would you like to view today?</p>
+        {/* Material UI buttons that have links to the different pages to prevent the use of the 
+            Navbar component for styling purposes 
+        */}
         <div className="homeButtons">
             <Stack direction="row" spacing={2}>
                 <Button href="/parkList" variant="contained">List of Parks</Button>

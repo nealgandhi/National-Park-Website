@@ -1,11 +1,9 @@
 .Footer{
-    bottom: 0;
-    width: 100%;
     color:white;
     background-color: rgb(2, 70, 2);
     padding: 5px;
     text-decoration: none;
-    position: fixed;
+    position: sticky;
     bottom: 0;
 }
 
