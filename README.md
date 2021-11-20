@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# National Parks Website -- Neal Gandhi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created for the Capital One Winter 2021 Summit Challenge using the National Parks Service API 
 
-## Available Scripts
+## Video Demonstration
+![ezgif com-gif-maker (8)](https://user-images.githubusercontent.com/73033133/142737711-650cc8a9-0235-4944-89e4-8eca1ea36f16.gif)
 
-In the project directory, you can run:
+## Synopsis
 
-### `yarn start`
+This website is made to let you search through a list of parks with an active search bar and provides information on the park itself. You can also add the parks to a watch list that makes all of the non-streaming images available on a different page. The other filter is being able to view a list of parks based on the activity you select. Each activity button, on click, displays a list of parks with that specific activity available.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Challenge
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+I started this project the day the initial email came out and I knew that I would have to learn a lot to be able to submit a properly designed website with the aesthetics that I wanted to have. This was my first real time working with React.js, and this is where my main challenge came from. The learning hurdle took me a few weeks to understand, but slowly I understood more and more on how to make a fluid website that has both functionality and aesthetics.
 
-### `yarn test`
+## Tools used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I mainly used the React.js framework for the backend of my website and used their innate tools to allow me to fetch data from the API and display different components on different webpages. To style, I used Material-UI and used the button component to let my buttons display in a nicer manor.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
