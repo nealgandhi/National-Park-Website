@@ -1,7 +1,8 @@
 # National Parks Website -- Neal Gandhi
 
 This project was created for the Capital One Winter 2021 Summit Challenge using the National Parks Service API 
-Live site can be found here: [link](https://national-park-website.vercel.app/)
+
+Live site can be found [here](https://national-park-website.vercel.app/)
 
 ## Video Demonstration
 ![ezgif com-gif-maker (8)](https://user-images.githubusercontent.com/73033133/142737711-650cc8a9-0235-4944-89e4-8eca1ea36f16.gif)
